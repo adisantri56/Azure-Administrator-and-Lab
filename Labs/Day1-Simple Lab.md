@@ -28,7 +28,7 @@ Deploy a Linux Virtual Machine in Azure and access it from the internet using SS
 
 ## 🏗 Step 1 — Create Linux VM
 
-![Create VM](../screenshots/Screenshot_1.jpg)
+Image/d1-created-vm1.jpg
 
 > Azure Portal → Virtual Machines → Create VM
 
