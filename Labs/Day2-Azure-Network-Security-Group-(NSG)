@@ -6,23 +6,20 @@
 ---
 
 ## 🎯 Objective
-Deploy a Linux Virtual Machine in Azure and access it from the internet using SSH.
+Create config NSG rule for ICMP Traffic
 
 ---
 
 ## 🛠 Lab Tasks
-- Create Linux VM
-- Assign Public IP
-- Configure Network Security Group (Allow SSH - Port 22)
-- Validate remote access
+- Allow ICMP Traffic
+- Deny ICMP Traffic
 
 ---
 
 ## 🧠 Key Concept
 
-- Public IP is attached to the VM NIC
-- Inbound traffic is controlled by NSG rules
-- Without NSG allow rule → VM is not reachable
+- NSG attached on NIC vs Subnet
+- Rule Priority
 
 ---
 
@@ -55,22 +52,13 @@ Deploy a Linux Virtual Machine in Azure and access it from the internet using SS
 
 ## ✅ Validation
 
-Successfully accessed VM via SSH using public IP.
+Successfully apply allow and deny traffic from ICMP
 
 ---
 
-## 🏢 Real-World Mapping
-
-| Azure Component | On-Prem Equivalent |
-|----------------|-------------------|
-| Public IP      | WAN IP |
-| NSG            | Firewall / ACL |
-| VNet           | VLAN |
-
----
 
 ## 💡 Lessons Learned
 
-- Public IP alone is not enough
-- NSG is mandatory for inbound access
-- Azure security model is deny-by-default
+- By default NGS not allowed ICMP
+- NSG is mandatory for inbound and outbound access
+- NSG like firewall
