@@ -6,21 +6,19 @@
 ---
 
 ## 🎯 Objective
-Create config NSG rule for ICMP Traffic
+- Deep dive virtual network on azure
 
 ---
 
 ## 🛠 Lab Tasks
-- Allow ICMP Traffic
-- Deny ICMP Traffic
+- Checked IP Addess VM that conncted to VNET
+- Added new subnet to VNET
 
 ---
 
 ## 🧠 Key Concept
 
-- Allow = Permit traffic through to destination
-- Deny = Drop traffic through to destination
-- Rule Priority
+- VNET = Virtual network on cloud service, we able to create from small until big subnet on our environment
 
 ---
 
